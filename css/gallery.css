@@ -16,6 +16,7 @@ body {
     grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
     grid-gap: 20px;
     padding: 20px;
+    margin: auto;
   }
   
   .item {
