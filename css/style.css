@@ -13,8 +13,8 @@ body {
 
 /* Header Styles */
 header {
-  position: sticky;
-  background-color: #333;
+  z-index: 20;
+  background-color: #252222;
   color: #fff;
   text-align: center;
   padding: 20px;
@@ -55,18 +55,23 @@ nav ul li a:hover {
   color: rgb(95, 82, 82);
 }
 
+header p{
+      font-size: 15px;
+        margin-top: 4px;
+        color: #b8b8b8;
+}
+
 /* Gallery section */
 .gallery {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   margin-bottom: 40px;
+  gap: 10px;
+ overflow: hidden;
 }
-
 .gallery img {
-  width: 300px;
-  height: 300px;
-  margin-bottom: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Contact section */
@@ -171,9 +176,9 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #555;
+  color: #ccc5c5;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 14px;
   text-transform: uppercase;
   transition: all 0.3s ease;
   padding: 10px 15px;
@@ -181,11 +186,6 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #555;
-  color: #fff;
-}
-
-.active_nav_btn{
   background-color: #555;
   color: #fff;
 }
@@ -324,8 +324,7 @@ nav ul li a:hover {
 .my-gallery{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  
+  align-items: center; 
 }
 .my-gallery h2{
   font-size: 36px;
@@ -352,22 +351,23 @@ nav ul li a:hover {
 .my-gallery .gallery {
 display: flex;
 justify-content: space-around;  
-width: 80%;
+width: 90%;
 }
 
 
 
 
 .my-gallery .gallery img {
-  width: 300px;
+  width: 500px;
+  overflow: hidden;
   height: auto;
-  border: 2px solid #333;
   transition: all 0.3s ease;
 }
 
 .my-gallery .gallery img:hover {
   transform: scale(1.1);
-  border: 2px solid #f9c74f;
+  z-index: 10;
+  cursor: pointer;
 }
 .contact {
   display: flex;
@@ -456,7 +456,7 @@ footer ul li a:hover {
 } */
 
 footer {
-    background-color: #343a40;
+    background-color: #161718;
     color: #f8f9fa;
     padding: 20px;
     font-size: 14px;
@@ -482,6 +482,11 @@ footer {
   
   footer ul li a:hover {
     text-decoration: underline;
+  }
+  footer p{
+        font-size: 12px;
+          color: gray;
+          margin-top: 8px;
   }
   
   .footer-logo {
