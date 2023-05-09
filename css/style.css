@@ -8,10 +8,12 @@
 /* Body Styles */
 body {
   font-family: Arial, sans-serif;
+  position: relative;
 }
 
 /* Header Styles */
 header {
+  position: sticky;
   background-color: #333;
   color: #fff;
   text-align: center;
@@ -215,6 +217,11 @@ nav ul li a {
 }
 
 nav ul li a:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+.active_nav_btn{
   background-color: #555;
   color: #fff;
 }
