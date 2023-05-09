@@ -1,0 +1,26 @@
+main {
+    max-width: 98%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .tip-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .tip-card {
+    width: 32%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .tip-card h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  
