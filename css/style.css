@@ -55,45 +55,6 @@ nav ul li a:hover {
   color: rgb(95, 82, 82);
 }
 
-/* Home section */
-.home {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: url("bg.jpg") no-repeat center center fixed;
-  background-size: cover;
-  text-align: center;
-  color: #fff;
-  padding: 20px;
-}
-
-.home h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
-}
-
-.home p {
-  font-size: 24px;
-  margin-bottom: 40px;
-}
-
-.home button {
-  font-size: 18px;
-  padding: 10px 20px;
-  border: none;
-  background: #c33;
-  color: #fff;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.home button:hover {
-  background: #fff;
-  color: #c33;
-}
-
 /* Gallery section */
 .gallery {
   display: flex;
@@ -342,7 +303,7 @@ nav ul li a:hover {
   cursor: pointer;
 }
 .services button {
-    margin-top: 20px;
+    margin-top: 50px;
     background-color: #555;
     color: #fff;
     padding: 10px 20px;
@@ -353,49 +314,61 @@ nav ul li a:hover {
     transition: all 0.3s ease;
 }
 
-
+.services button:hover{
+  background-color: #fff;
+  color: #555;
+  cursor: pointer; 
+}
 
 /* Gallery section */
-
-.gallery {
-  padding: 80px 0;
-  text-align: center;
+.my-gallery{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 }
-
-.gallery h2 {
+.my-gallery h2{
   font-size: 36px;
   color: #555;
-  margin-bottom: 40px;
+  margin: 40px;
+  text-align: center;
+}
+.my-gallery button{
+  margin: 25px auto;
+  background-color: #555;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+.my-gallery button:hover{
+  background-color: #fff;
+  color: #555;
+  cursor: pointer;
+}
+.my-gallery .gallery {
+display: flex;
+justify-content: space-around;  
+width: 80%;
 }
 
-.gallery p {
-  font-size: 18px;
-  color: #777;
-  margin-bottom: 40px;
-}
 
-.gallery ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.gallery ul li {
-  margin: 20px;
-}
 
-.gallery img {
+
+.my-gallery .gallery img {
   width: 300px;
   height: auto;
   border: 2px solid #333;
   transition: all 0.3s ease;
 }
 
-.gallery img:hover {
+.my-gallery .gallery img:hover {
   transform: scale(1.1);
   border: 2px solid #f9c74f;
 }
-
 .contact {
   display: flex;
   flex-direction: column;
